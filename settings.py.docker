@@ -8,11 +8,11 @@ env = Env()
 
 # Paste the Mattermost webhook URL you created here
 # See also: https://github.com/mattermost/platform/blob/master/doc/integrations/webhooks/Incoming-Webhooks.md
-mattermost_webhook_url = env.str('MATTERMOST_HOOK_URL')
+mattermost_webhook_url = env.str('https://mm.bitmill.co/hooks/f9sqf3xp1frffx5kth1akr381r')
 
 # Paste the Mattermost integration Token you created here
 # See also: https://docs.mattermost.com/developer/slash-commands.html
-mattermost_integration_token = env.str('MATTERMOST_CMD_TOKEN' ,'')
+mattermost_integration_token = env.str('pukjw7y65id39fx7jsi19wef9e' ,'')
 
 # Set the delay between feed pulls to your needs. 5 minutes should be okay.
 delay_between_pulls = env.int('RSS_DELAY_PULL', 60 * 5)
@@ -43,7 +43,7 @@ default_show_name = env.bool('RSS_SHOW_NAME', True)
 default_show_title = env.bool('RSS_SHOW_TITLE', True)
 default_show_description = env.bool('RSS_SHOW_DESCR', True)
 default_show_url = env.bool('RSS_SHOW_URL', True)
-default_channel = env.str('MATTERMOST_CHANNEL')
+default_channel = env.str('rss')
 
 # Your feeds come here:
 # RssFeed('Feed name', 'Feed URL', 'Image URL', 'Mattermost username', 'Mattermost channel',
